@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EliminarController">
+   <children>
+      <ImageView fitHeight="408.0" fitWidth="606.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/fondoEliminar.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="180.0" layoutY="29.0" prefHeight="27.0" prefWidth="246.0" text="Eliminar Clientes" textAlignment="CENTER" textFill="#fb0000">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="92.0" prefHeight="20.0" prefWidth="74.0" text="Buscar" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBuscar" layoutX="129.0" layoutY="90.0" prefHeight="25.0" prefWidth="217.0" promptText="Buscar..." />
+      <Button fx:id="btnBuscar" layoutX="367.0" layoutY="90.0" mnemonicParsing="false" onAction="#eventBuscar" prefHeight="25.0" prefWidth="84.0" text="Buscar" />
+      <Label alignment="CENTER" layoutX="55.0" layoutY="136.0" prefHeight="35.0" prefWidth="186.0" text="Datos de Cliente" textAlignment="CENTER" textFill="#fb0000">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbCliente" layoutX="-1.0" layoutY="184.0" prefHeight="157.0" prefWidth="605.0">
+         <columns>
+            <TableColumn fx:id="colNombre" prefWidth="98.66665649414062" text="Nombre" />
+            <TableColumn fx:id="colTelefono" prefWidth="95.33331298828125" text="Telefono" />
+            <TableColumn fx:id="colCorreo" prefWidth="98.0" text="Correo" />
+            <TableColumn fx:id="colDireccion" prefWidth="96.66668701171875" text="Dirección" />
+            <TableColumn fx:id="colEdad" prefWidth="73.33331298828125" text="Edad" />
+            <TableColumn fx:id="colSexo" prefWidth="79.33331298828125" text="Sexo" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnEliminar" layoutX="68.0" layoutY="358.0" mnemonicParsing="false" onAction="#eventEliminar" prefHeight="25.0" prefWidth="80.0" text="Eliminar" />
+      <Button fx:id="btnEliminarTodo" layoutX="251.0" layoutY="358.0" mnemonicParsing="false" onAction="#eventEliminarTodo" prefHeight="25.0" prefWidth="102.0" text="Eliminar Todo" />
+      <Button fx:id="btnVolver" layoutX="451.0" layoutY="358.0" mnemonicParsing="false" onAction="#eventVolver" prefHeight="25.0" prefWidth="80.0" text="Volver" />
+   </children>
+</AnchorPane>

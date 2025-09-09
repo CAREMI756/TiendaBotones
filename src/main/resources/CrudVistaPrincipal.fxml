@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="395.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.VistaPrincipalController">
+   <children>
+      <ImageView fitHeight="395.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/fondo2.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="150.0" layoutY="20.0" prefHeight="36.0" prefWidth="300.0" text="Bienvenidos a TeschaFest" textFill="#ff3100">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="145.0" prefHeight="23.0" prefWidth="67.0" text="Agregar" textFill="#fbf7f7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="145.0" prefHeight="23.0" prefWidth="67.0" text="Actualizar" textFill="#fbf8f8">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="145.0" prefHeight="23.0" prefWidth="67.0" text="Buscar" textFill="#fdfbfb">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="307.0" layoutY="145.0" prefHeight="23.0" prefWidth="67.0" text="Eliminar" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="397.0" layoutY="145.0" prefHeight="23.0" prefWidth="67.0" text="Mostrar" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAgregar" layoutX="34.0" layoutY="168.0" mnemonicParsing="false" onAction="#escAgregar" prefHeight="25.0" prefWidth="67.0" text="Add" textAlignment="CENTER" />
+      <Button fx:id="btnActualizar" layoutX="123.0" layoutY="168.0" mnemonicParsing="false" onAction="#escActualizar" prefHeight="25.0" prefWidth="67.0" text="Update" textAlignment="CENTER" />
+      <Button fx:id="btnBuscar" layoutX="215.0" layoutY="168.0" mnemonicParsing="false" onAction="#escBuscar" prefHeight="25.0" prefWidth="67.0" text="Search" textAlignment="CENTER" />
+      <Button fx:id="btnEliminar" layoutX="307.0" layoutY="168.0" mnemonicParsing="false" onAction="#escEliminar" prefHeight="25.0" prefWidth="67.0" text="Delete" textAlignment="CENTER" />
+      <Button fx:id="btnMostrar" layoutX="397.0" layoutY="168.0" mnemonicParsing="false" onAction="#escMostrar" prefHeight="25.0" prefWidth="67.0" text="Show" textAlignment="CENTER" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/pika-pika.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="43.0" layoutY="65.0" prefHeight="45.0" prefWidth="527.0" text="Este programa muestra las opciones mediante las cuales puede realizar diferentes &#10;operaciones." textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
