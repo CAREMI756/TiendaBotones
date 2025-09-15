@@ -4,12 +4,15 @@ package Model;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import io.github.cdimascio.dotenv.Dotenv;
 
 // Clase principal
 public class ConexionBD {
-    private static final String URL = "jdbc:mysql://localhost:3306/tienda"; // Url de BD
-    private static final String USER = "root"; // User
-    private static final String PASSWORD = "root"; // Password
+    // Cargar variables del archivo .env
+    static Dotenv dotenv = Dotenv.load();
+    private static final String URL = dotenv.get("URL"); // Url de BD
+    private static final String USER = dotenv.get("USER"); // User
+    private static final String PASSWORD = dotenv.get("PASSWORD"); // Password
 
     // Variables globales
     private static Connection connection;
